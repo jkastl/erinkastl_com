@@ -7,10 +7,56 @@
     <title>Erin Kastl, DO | Family Physician | Austin, Minnesota</title>
     <meta name="description" content="Erin Kastl is family physician providing primary care in Austin, Minnesota." />
     <meta name="keywords" content="doctor, physician, obgyn, pediatrician, austin, minnesota, mn, kastl, erin, family, primary care, mayo" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
     <style type="text/css">
       .sticky-topbar {
         width: 100%;
+      }
+      body, h1, h2, h3, h4, h5, h6 {
+        color: rgb(20, 16, 35);
+        background-color: rgb(38, 30, 72);
+        font-family: 'Roboto Slab', serif !important;
+      }
+      .text-light {
+        color: rgb(147, 168, 201);
+      }
+      #callout-block {
+        margin-top: 30px;
+      }
+      .callout {
+        background-color: rgb(147, 168, 201);
+        border-radius: 6px;
+        margin-top: 20px;
+      }
+      .callout strong {
+        font-size: 1.3rem;
+      }
+      .callout-img {
+        margin-top: -30px !important;
+        margin-bottom: 30px;
+        border-radius: 6px;
+        box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+      }
+      .callout-img img {
+        border-radius: 6px;
+      }
+      .top-bar a {
+        color: #343434;
+      }
+      .top-bar li {
+        border: 1px solid black;
+        border-radius: 6px;
+        margin-right: 3px;
+      }
+      .top-bar ul {
+        background-color: rgb(147, 168, 201);
+      }
+      .top-bar {
+        background-color: rgb(147, 168, 201);
+      }
+      .grid-container {
+        margin-top: 30px;
       }
     </style>
   </head>
@@ -26,8 +72,8 @@
           <div class="menu-text show-for-medium">Erin Kastl, DO</div>
           <div class="top-bar-right">
             <ul class="dropdown menu" data-dropdown-menu>
-              <li><a href="#">About</a></li>
               <li><a href="#">Services</a></li>
+              <li><a href="#">About</a></li>
               <li><a href="#">Testimonials</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
@@ -39,28 +85,31 @@
     <div class="grid-container text-center">
       <div class="grid-x grid-padding-x">
         <div class="large-12 cell">
-          <h1>Family Medicine Physician in Austin, MN</h1>
-          <h3>Compassionate healthcare for families, women, and children.</h3>
+          <h1 class="text-light">Family Medicine Physician in Austin, MN</h1>
+          <h3 class="text-light">Compassionate healthcare for families, women, and children.</h3>
         </div>
       </div>
 
-      <div class="grid-x grid-padding-x">
+      <div id="callout-block" class="grid-x grid-padding-x">
         <div class="large-12 medium-12 cell">
           <div class="grid-x grid-padding-x">
             <div class="large-4 medium-6 small-12 cell">
-              <div class="primary callout">
+              <div class="callout">
+                <div class="callout-img"><img src="img/family-min.png"></div>
                 <p><strong>Preventative Care for Families</strong></p>
                 <p>A lifetime of good health starts with annual wellness exams and screenings. A primary care physician can be your greatest partner in prevention by providing important screenings designed to identify complications and illnesses during early stages.</p>
               </div>
             </div>
             <div class="large-4 medium-6 small-12 cell">
-              <div class="primary callout">
+              <div class="callout">
+                <div class="callout-img"><img src="img/baby-min.png"></div>
                 <p><strong>Skilled Care for Children</strong></p>
                 <p>It is never too early for a child to begin healthcare in order to set the foundation for a healthy adulthood. We are committed to providing a pleasant medical setting where children and parents will feel confident that their children's medical issues are handled thoroughly and professionally.</p>
               </div>
             </div>
             <div class="large-4 medium-12 small-12 cell">
-              <div class="primary callout">
+              <div class="callout">
+                <div class="callout-img"><img src="img/jogging-min.png"></div>
                 <p><strong>Specialized Care for Women</strong></p>
                 <p>Providing individualized care to women through every stage of their lives. Focusing on the well-being and comfort of our patients. Dr. Kastl is fully committed to providing the highest quality care in a comfortable setting.</p>
               </div>
@@ -69,6 +118,7 @@
         </div>
       </div>
     </div>
+    <footer class="text-center text-light">&copy; 2019</footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/5.2.1/what-input.min.js"></script>
